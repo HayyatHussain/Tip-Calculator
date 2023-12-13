@@ -58,8 +58,8 @@ const increasePeople = () => {
 // ** Splits the bill between fewer people **
 const decreasePeople = () => {
   
-  /* if amount is 1 or less simply return(stop the function   from execiting any further)
-  (a.k.a you can't decrease the number of people to 0 or      negative!)*/
+  /* if amount is 1 or less simply return(stop the function from execiting any further)
+  (a.k.a you can't decrease the number of people to 0 or negative!)*/
   if (totalPeople <= 1) {
     return alert("Hey, stop trying to do that!!!!!");
   }
