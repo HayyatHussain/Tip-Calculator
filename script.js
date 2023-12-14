@@ -27,7 +27,7 @@ const calculateBill = () => {
   const total = bill + tipAmount;
 
   // calculate the per person total (total divided by number of people)
-  const totalPerPerson = (total / totalPeople).toLocaleString("en-US");
+  const totalPerPerson = total / totalPeople;
   
   // update the perPersonTotal on DOM & show it to user
   perPersonBill.innerHTML = `$${totalPerPerson.toFixed(2)}`;
