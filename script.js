@@ -30,7 +30,7 @@ const calculateBill = () => {
   const totalPerPerson = Math.round(total / totalPeople);
   
   // update the perPersonTotal on DOM & show it to user
-  perPersonBill.innerHTML = totalPerPerson;
+  perPersonBill.innerHTML = `$${totalPerPerson}`;
 
   // Check if the input is not a number
   if (isNaN(bill) || isNaN(tip)) {
